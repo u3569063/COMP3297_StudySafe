@@ -16,3 +16,7 @@ class Record(models.Model):
     venue_code = models.ForeignKey(Venue, on_delete=models.CASCADE)
     date_time = models.DateTimeField()
     action = models.BinaryField()
+
+class PositiveCases(models.Model):
+    hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
+    date_of_diagnosis = models.DateTimeField()
