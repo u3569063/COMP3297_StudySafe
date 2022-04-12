@@ -4,7 +4,7 @@
 - 303569034 NG Chun Hei (John) 
 - 3035686554 TAM Chun Kit (Kolton)
 - 3035686047 CHAN Hay Yin (Hayward)
-- 3035
+- 3035449712 Kang Yetian (Gina)
 - 3035
 
 ## About
