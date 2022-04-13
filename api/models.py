@@ -6,17 +6,25 @@ class Venue(models.Model):
     location = models.CharField(max_length=150)
     type = models.CharField(max_length=2)
     capacity = models.IntegerField()
+    def __str__(self):
+        return self.location
 
 class Member(models.Model):
     hkuid = models.CharField(max_length=10)
     name = models.CharField(max_length=150)
+    def __str__(self):
+        return self.name
 
-class Record(models.Model):
+class AccessRecord(models.Model):
     hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
     venue_code = models.ForeignKey(Venue, on_delete=models.CASCADE)
     date_time = models.DateTimeField()
-    action = models.BinaryField()
+    action = models.CharField(max_length=5)
+    def __str__(self):
+        return f"{self.hkuid}: {self.venue_code} {self.action} @ {self.date_time}"
 
 class PositiveCases(models.Model):
     hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
-    date_of_diagnosis = models.DateTimeField()
+    date_of_diagnosis = models.DateField()
+    def __str__(self):
+        return f"{self.hkuid}: {self.date_of_diagnosis}"
