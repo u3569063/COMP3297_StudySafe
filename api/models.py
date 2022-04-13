@@ -21,7 +21,7 @@ class AccessRecord(models.Model):
     date_time = models.DateTimeField()
     action = models.CharField(max_length=5)
     def __str__(self):
-        return f"{self.hkuid}: {self.venue_code} {self.action} @ {self.date_time}"
+        return f"{self.hkuid}: {self.venue_code} {self.action} | {self.date_time}"
 
 class PositiveCases(models.Model):
     hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
