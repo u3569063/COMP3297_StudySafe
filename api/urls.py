@@ -7,4 +7,5 @@ router.register(r'venues', DisinfectVenueViewSet, 'venues')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('contacts/', views.contacts),
 ]
