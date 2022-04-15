@@ -1,38 +1,30 @@
 from django.db import models
 
-
 # Create your models here.
 class Venue(models.Model):
-    venue_code = models.CharField(max_length=20)
-    location = models.CharField(max_length=150)
-    type = models.CharField(max_length=2)
-    capacity = models.IntegerField()
-
+    Venue_Code = models.CharField(max_length=20, unique=True)
+    Location = models.CharField(max_length=150)
+    Type = models.CharField(max_length=2)
+    Capacity = models.IntegerField()
     def __str__(self):
-        return self.venue_code
-
+        return self.Location
 
 class Member(models.Model):
-    hkuid = models.CharField(max_length=10)
-    name = models.CharField(max_length=150)
-
+    HKU_ID = models.CharField(max_length=10, unique=True)
+    Name = models.CharField(max_length=150)
     def __str__(self):
-        return self.hkuid
-
+        return self.Name
 
 class AccessRecord(models.Model):
-    hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
-    venue_code = models.ForeignKey(Venue, on_delete=models.CASCADE)
-    date_time = models.DateTimeField()
-    action = models.CharField(max_length=5)
-
+    HKU_ID = models.ForeignKey(Member, on_delete=models.CASCADE)
+    Venue_Code = models.ForeignKey(Venue, on_delete=models.CASCADE)
+    Date_Time = models.DateTimeField()
+    Action = models.CharField(max_length=5)
     def __str__(self):
-        return f"{self.hkuid}: {self.venue_code} {self.action} | {self.date_time}"
+        return f"{self.HKU_ID}: {self.Venue_Code} {self.Action} | {self.Date_Time}"
 
-
-class PositiveCases(models.Model):
-    hkuid = models.ForeignKey(Member, on_delete=models.CASCADE)
-    date_of_diagnosis = models.DateField()
-
+class PositiveCase(models.Model):
+    HKU_ID = models.ForeignKey(Member, on_delete=models.CASCADE)
+    Date_Of_Diagnosis = models.DateField()
     def __str__(self):
-        return f"{self.hkuid}: {self.date_of_diagnosis}"
+        return f"{self.HKU_ID}: {self.Date_Of_Diagnosis}"
