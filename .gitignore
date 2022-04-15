@@ -1,6 +1,4 @@
 .DS_Store
 Pipfile.lock
 Pipfile
-api/migrations/*
-api/migrations/*
-StudySafeCore/settings.py
+*/*.pyc
