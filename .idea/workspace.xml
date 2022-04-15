@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="82986c64-f641-4799-9cfa-a8b46940e435" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="82986c64-f641-4799-9cfa-a8b46940e435" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+    </list>
+>>>>>>> 9a3d914... merged
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +42,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="270">
               <caret line="25" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+=======
+            <state relative-caret-position="-2">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+>>>>>>> 9a3d914... merged
               <folding>
                 <element signature="e#187#217#0" expanded="true" />
               </folding>
@@ -47,7 +60,11 @@
         <entry file="file://$PROJECT_DIR$/py_client/basic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
+<<<<<<< HEAD
               <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+=======
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+>>>>>>> 9a3d914... merged
             </state>
           </provider>
         </entry>
@@ -61,7 +78,11 @@
         <entry file="file://$PROJECT_DIR$/StudySafeCore/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
+<<<<<<< HEAD
               <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+=======
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+>>>>>>> 9a3d914... merged
               <folding>
                 <element signature="e#637#669#0" expanded="true" />
               </folding>
@@ -72,8 +93,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="135">
               <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+=======
+            <state relative-caret-position="75">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+>>>>>>> 9a3d914... merged
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -127,9 +153,15 @@
         <option value="$PROJECT_DIR$/api/tests.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/StudySafeCore/settings.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/api/urls.py" />
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/py_client/basic.py" />
+=======
+        <option value="$PROJECT_DIR$/py_client/basic.py" />
+        <option value="$PROJECT_DIR$/api/urls.py" />
+        <option value="$PROJECT_DIR$/api/views.py" />
+>>>>>>> 9a3d914... merged
       </list>
     </option>
   </component>
@@ -234,6 +266,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-222" y="-1057" width="1332" height="987" extended-state="0" />
+<<<<<<< HEAD
+=======
+    <editor active="true" />
+>>>>>>> 9a3d914... merged
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16399695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -390,7 +426,11 @@
     <entry file="file://$PROJECT_DIR$/StudySafeCore/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
+<<<<<<< HEAD
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+=======
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+>>>>>>> 9a3d914... merged
           <folding>
             <element signature="e#637#669#0" expanded="true" />
           </folding>
@@ -400,14 +440,23 @@
     <entry file="file://$PROJECT_DIR$/py_client/basic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
+<<<<<<< HEAD
           <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+=======
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+>>>>>>> 9a3d914... merged
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="135">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+=======
+        <state relative-caret-position="75">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+>>>>>>> 9a3d914... merged
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -416,8 +465,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="270">
           <caret line="25" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+=======
+        <state relative-caret-position="-2">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+>>>>>>> 9a3d914... merged
           <folding>
             <element signature="e#187#217#0" expanded="true" />
           </folding>
