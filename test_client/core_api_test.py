@@ -1,6 +1,8 @@
 import requests
+import json
 
-core_endpoint="http://localhost:8000/api/contacts/"
+core_endpoint="http://localhost:8000/contacts/"
 
-get_response = requests.get(core_endpoint, json={})
-print(get_response.json())
+response = requests.get(core_endpoint)
+
+print(response.status_code)
