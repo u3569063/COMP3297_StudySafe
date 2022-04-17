@@ -1,0 +1,503 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /disinfectvenues/:
+    get:
+      operationId: listDisinfectVenues
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - disinfectvenues
+  /closecontacts/:
+    get:
+      operationId: listCloseContacts
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - closecontacts
+
+  /records/:
+    get:
+      operationId: listAccessRecords
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AccessRecord'
+          description: ''
+      tags:
+      - records
+    post:
+      operationId: createAccessRecord
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessRecord'
+          description: ''
+      tags:
+      - records
+  /records/{id}/:
+    get:
+      operationId: retrieveAccessRecord
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this access record.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessRecord'
+          description: ''
+      tags:
+      - records
+    put:
+      operationId: updateAccessRecord
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this access record.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessRecord'
+          description: ''
+      tags:
+      - records
+    patch:
+      operationId: partialUpdateAccessRecord
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this access record.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AccessRecord'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessRecord'
+          description: ''
+      tags:
+      - records
+    delete:
+      operationId: destroyAccessRecord
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this access record.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - records
+  /venues/:
+    get:
+      operationId: listVenues
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - venues
+    post:
+      operationId: createVenue
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Venue'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - venues
+  /venues/{id}/:
+    get:
+      operationId: retrieveVenue
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this venue.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - venues
+    put:
+      operationId: updateVenue
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this venue.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Venue'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - venues
+    patch:
+      operationId: partialUpdateVenue
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this venue.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Venue'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Venue'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+          description: ''
+      tags:
+      - venues
+    delete:
+      operationId: destroyVenue
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this venue.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - venues
+  /members/:
+    get:
+      operationId: listMembers
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - members
+    post:
+      operationId: createMember
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Member'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - members
+  /members/{id}/:
+    get:
+      operationId: retrieveMember
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this member.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - members
+    put:
+      operationId: updateMember
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this member.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Member'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - members
+    patch:
+      operationId: partialUpdateMember
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this member.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Member'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+          description: ''
+      tags:
+      - members
+    delete:
+      operationId: destroyMember
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this member.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - members
+components:
+  schemas:
+    Venue:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        Venue_Code:
+          type: string
+          maxLength: 20
+        Location:
+          type: string
+          maxLength: 150
+        Type:
+          type: string
+          maxLength: 2
+        Capacity:
+          type: integer
+      required:
+      - Venue_Code
+      - Location
+      - Type
+      - Capacity
+    Member:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        HKU_ID:
+          type: string
+          maxLength: 10
+        Name:
+          type: string
+          maxLength: 150
+      required:
+      - HKU_ID
+      - Name
+    AccessRecord:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        Date_Time:
+          type: string
+          format: date-time
+        Action:
+          type: string
+          maxLength: 5
+        HKU_ID:
+          type: integer
+        Venue_Code:
+          type: integer
+      required:
+      - Date_Time
+      - Action
+      - HKU_ID
+      - Venue_Code

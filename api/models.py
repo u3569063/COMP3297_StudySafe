@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Venue(models.Model):
-    Venue_Code = models.CharField(max_length=20, unique=True)
+    Venue_Code = models.CharField(max_length=20, unique=True, primary_key=True)
     Location = models.CharField(max_length=150)
     Type = models.CharField(max_length=2)
     Capacity = models.IntegerField()
@@ -10,7 +10,7 @@ class Venue(models.Model):
         return self.Location
 
 class Member(models.Model):
-    HKU_ID = models.CharField(max_length=10, unique=True)
+    HKU_ID = models.CharField(max_length=10, unique=True, primary_key=True)
     Name = models.CharField(max_length=150)
     def __str__(self):
         return self.Name

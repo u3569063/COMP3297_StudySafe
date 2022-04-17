@@ -7,7 +7,6 @@ from .serializers import *
 ENTRY = "entry"
 EXIT = "exit"
 
-
 def visited_in_past_2_days(visit_date, test_date):
     return True if visit_date - test_date <= timedelta(days=2) else False
 
@@ -138,12 +137,19 @@ class DisinfectVenueViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = list_disinfect_venues()
     serializer_class = VenueSerializer
 
-
 class CloseContactViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = list_close_contacts()
     serializer_class = MemberSerializer
 
-
 class RecordViewSet(viewsets.ModelViewSet):
     queryset = AccessRecord.objects.all()
     serializer_class = AccessRecordSerializer
+
+class MemberViewSet(viewsets.ModelViewSet):
+    queryset = Member.objects.all()
+    serializer_class = MemberSerializer
+
+class VenueViewSet(viewsets.ModelViewSet):
+    queryset = Venue.objects.all()
+    serializer_class = VenueSerializer
+
