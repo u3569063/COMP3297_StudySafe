@@ -5,12 +5,12 @@ from .models import *
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = '__all__'
+        fields = ['Name', 'HKU_ID']
 
 class VenueSerializer(serializers.ModelSerializer):
     class Meta:
         model = Venue
-        fields = '__all__'
+        fields = ['Venue_Code']
 
 class AccessRecordSerializer(serializers.ModelSerializer):
     class Meta:

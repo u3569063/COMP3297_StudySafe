@@ -14,7 +14,7 @@ EXIT = "exit"
 
 
 def visited_in_past_2_days(visit_date, test_date):
-    return True if visit_date - test_date <= timedelta(days=2) else False
+    return True if test_date - visit_date <= timedelta(days=2) else False
 
 def stayed_for_more_than_30_mins(entry_time, exit_time):
     return True if exit_time - entry_time >= timedelta(minutes=30) else False
@@ -30,22 +30,15 @@ def list_disinfect_venues():
             visit_date = visit.Date_Time.date()
             positive_date = case.Date_Of_Diagnosis
             if visited_in_past_2_days(visit_date, positive_date):
-                # The Venue_Code of visit is suspicious
-                # see if stayed for more than 30 mins
-                record_e = (
-                    AccessRecord.objects.filter(HKU_ID=case.HKU_ID)
-                        .filter(Action=EXIT)
-                        .order_by('Date_Time')
-                )
-                entry_t, exit_t = visit.Date_Time, 0
-                if i not in range(len(record_e)):
-                    exit_t = datetime.now().astimezone()
-                else:
-                    exit_t = record_e[i].Date_Time
-                if stayed_for_more_than_30_mins(entry_t, exit_t):
-                    disinfect_venue.append(visit.Venue_Code.pk)
+                disinfect_venue.append(visit.Venue_Code.Venue_Code)
 
     disinfect_venue = Venue.objects.filter(Venue_Code__in=disinfect_venue).order_by("Venue_Code")
     return disinfect_venue
 
+def list_members():
+    members = Member.objects.all()
+    for member in members: 
+        print(member.HKU_ID)
+
+#print(list_members())
 print(list_disinfect_venues())
