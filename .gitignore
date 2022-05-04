@@ -1,2 +1,6 @@
 .DS_Store
 */*.pyc
+staticfiles/*
+api/migrations/*
+users/migrations/*
+.env
