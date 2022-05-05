@@ -13,7 +13,7 @@ class Member(models.Model):
     HKU_ID = models.CharField(max_length=10, unique=True, primary_key=True)
     Name = models.CharField(max_length=150)
     def __str__(self):
-        return self.Name
+        return f"{self.HKU_ID}: {self.Name}"
 
 class AccessRecord(models.Model):
     HKU_ID = models.ForeignKey(Member, on_delete=models.CASCADE)
@@ -22,9 +22,3 @@ class AccessRecord(models.Model):
     Action = models.CharField(max_length=5)
     def __str__(self):
         return f"{self.HKU_ID}: {self.Venue_Code} {self.Action} | {self.Date_Time}"
-
-class PositiveCase(models.Model):
-    HKU_ID = models.ForeignKey(Member, on_delete=models.CASCADE)
-    Date_Of_Diagnosis = models.DateField()
-    def __str__(self):
-        return f"{self.HKU_ID}: {self.Date_Of_Diagnosis}"

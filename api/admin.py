@@ -5,4 +5,3 @@ from .models import *
 admin.site.register(Member)
 admin.site.register(Venue)
 admin.site.register(AccessRecord)
-admin.site.register(PositiveCase)
