@@ -90,18 +90,21 @@ WSGI_APPLICATION = 'StudySafeCore.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": "ss",
+#         "USER": "adminse",
+#         "PASSWORD": "",
+#         "HOST": "localhost",
+#         "PORT": "",
+#     }
+# }
+
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "ss",
-        "USER": "adminse",
-        "PASSWORD": "",
-        "HOST": "localhost",
-        "PORT": "",
-    }
+    'default': env.dj_db_url('DATABASE_URL')
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
